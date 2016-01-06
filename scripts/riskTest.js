@@ -3,7 +3,7 @@ var oVal = {
     sNext: $.getUrlParameter("next"),
     bRefresh: $.getUrlParameter("refresh"),
     sUserId: "",
-    sQueType: "1"//问卷类型，入参123789
+    sQueType: ""//问卷类型，入参123789
 };
 var SENDURL = TZT.REQ.XML + 'action=25002&';
 var bReturnUrl = $.getUrlParameter("returnUrl");

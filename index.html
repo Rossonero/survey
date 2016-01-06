@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>风险评</title>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi = medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="styles/surveybase.css">
+    <link href="styles/risktest.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/overlay.css">
+</head>
+<body>
+<div class="risk-tips">
+    正确评估投资风险，选择最合适自己的投资方式！此次评估大约花费您一分钟时间。
+    <p class="risk-prog">当前进度为<span id="risk-prog">1/11</span></p>
+</div>
+<form class="risk" id="j_question" name="frm_jj_survey" method="post">
+    <input type="hidden" id="order" name="order" value="jj_survey">
+    <input type="hidden" id="op" name="op" value="submit">
+    <input type="hidden" id="returnurl" name="returnurl" value="">
+    <div class="subject" data-queid="1" data_id="1">
+        <p>1 最近您家庭预计进行证券投资的资金占家庭现有总资产(不含自住自用房产及汽车等固定资产)的比例是：</p>
+        <ul class="ansewrList">
+            <li data_id="1" data-proid="a" data_score="0"><b>A</b><span>70%以上</span><input name="risk1" type="radio"
+                                                                                           class="risk-radio"
+                                                                                           value="1"/></li>
+            <li data_id="1" data-proid="b" data_score="2"><b>B</b><span>50%-70%</span><input name="risk1" type="radio"
+                                                                                             class="risk-radio"
+                                                                                             value="2"/></li>
+            <li data_id="1" data-proid="c" data_score="4"><b>C</b><span>30%－50%</span><input name="risk1" type="radio"
+                                                                                             class="risk-radio"
+                                                                                             value="3"/></li>
+            <li data_id="1" data-proid="d" data_score="6"><b>D</b><span>10%－30%</span><input name="risk1" type="radio"
+                                                                                             class="risk-radio"
+                                                                                             value="4"/></li>
+            <li data_id="1" data-proid="e" data_score="8"><b>E</b><span>10%以下</span><input name="risk1" type="radio"
+                                                                                           class="risk-radio"
+                                                                                           value="5"/></li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="2">
+        <p>2 您可用于投资的资产数额为：</p>
+        <ul class="ansewrList">
+            <li data_id="2" data-proid="a" data_score="0"><b>A</b><span>不超过50万元人民币</span><input name="risk2"
+                                                                                                type="radio"
+                                                                                                class="risk-radio"
+                                                                                                value="1"/></li>
+            <li data_id="2" data-proid="b" data_score="2"><b>B</b><span>50万-300万元（不含）人民币</span><input name="risk2"
+                                                                                                      type="radio"
+                                                                                                      class="risk-radio"
+                                                                                                      value="2"/></li>
+            <li data_id="2" data-proid="c" data_score="4"><b>C</b><span>300万-1000万元（不含）人民币</span><input name="risk2"
+                                                                                                        type="radio"
+                                                                                                        class="risk-radio"
+                                                                                                        value="3"/></li>
+            <li data_id="2" data-proid="d" data_score="7"><b>D</b><span>1000万元人民币以上</span><input name="risk2"
+                                                                                                 type="radio"
+                                                                                                 class="risk-radio"
+                                                                                                 value="4"/></li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="3">
+        <p>3 您家庭的就业状况是：</p>
+        <ul class="ansewrList">
+            <li data_id="3" data-proid="a" data_score="6"><b>A</b><span>您与配偶均有稳定收入的工作</span><input name="risk3"
+                                                                                                   type="radio"
+                                                                                                   class="risk-radio"
+                                                                                                   value="1"/></li>
+            <li data_id="3" data-proid="b" data_score="4"><b>B</b><span>您与配偶其中一人有稳定收入的工作</span><input name="risk3"
+                                                                                                      type="radio"
+                                                                                                      class="risk-radio"
+                                                                                                      value="2"/></li>
+            <li data_id="3" data-proid="c" data_score="3"><b>C</b><span>您与配偶均没有稳定收入的工作或者已退休</span><input name="risk3"
+                                                                                                         type="radio"
+                                                                                                         class="risk-radio"
+                                                                                                         value="3"/>
+            </li>
+            <li data_id="3" data-proid="d" data_score="2"><b>D</b><span>未婚，但有稳定收入的工作</span><input name="risk3"
+                                                                                                  type="radio"
+                                                                                                  class="risk-radio"
+                                                                                                  value="4"/></li>
+            <li data_id="3" data-proid="e" data_score="0"><b>E</b><span>未婚，目前暂无稳定收入的工作</span><input name="risk3"
+                                                                                                    type="radio"
+                                                                                                    class="risk-radio"
+                                                                                                    value="5"/></li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="4">
+        <p>4 您的投资经验可以被概括为：</p>
+        <ul class="ansewrList">
+            <li data_id="4" data-proid="a" data_score="1"><b>A</b><span>有限：除银行活期账户和定期存款外，我基本没有其他投资经验</span><input
+                    name="risk4" type="radio" class="risk-radio" value="1"/></li>
+            <li data_id="4" data-proid="b" data_score="6">
+                <b>B</b><span>一般：除银行活期账户和定期存款外，我购买过基金、保险等理财产品，但还需要进一步的指导</span><input name="risk4" type="radio"
+                                                                                      class="risk-radio" value="2"/>
+            </li>
+            <li data_id="4" data-proid="c" data_score="9">
+                <b>C</b><span>丰富：我是一位有经验的投资者，参与过股票、基金等产品的交易，并倾向于自己做出投资决策</span><input name="risk4" type="radio"
+                                                                                      class="risk-radio" value="3"/>
+            </li>
+            <li data_id="4" data-proid="d" data_score="12">
+                <b>D</b><span>非常丰富： 我是一位非常有经验的投资者，参与过权证、期货或创业板等高风险产品的交易</span><input name="risk4" type="radio"
+                                                                                     class="risk-radio" value="4"/></li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="5">
+        <p>5 您的年龄是：</p>
+        <ul class="ansewrList">
+            <li data_id="5" data-proid="a" data_score="8"><b>A</b><span>18-30岁</span><input name="risk5" type="radio"
+                                                                                            class="risk-radio"
+                                                                                            value="1"/></li>
+            <li data_id="5" data-proid="b" data_score="12"><b>B</b><span>31-40岁</span><input name="risk5" type="radio"
+                                                                                             class="risk-radio"
+                                                                                             value="2"/></li>
+            <li data_id="5" data-proid="c" data_score="6"><b>C</b><span>41-50岁</span><input name="risk5" type="radio"
+                                                                                            class="risk-radio"
+                                                                                            value="3"/></li>
+            <li data_id="5" data-proid="d" data_score="4"><b>D</b><span>51-60岁</span><input name="risk5" type="radio"
+                                                                                            class="risk-radio"
+                                                                                            value="4"/></li>
+            <li data_id="5" data-proid="e" data_score="0"><b>E</b><span>超过60岁</span><input name="risk5" type="radio"
+                                                                                           class="risk-radio"
+                                                                                           value="5"/></li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="6">
+        <p>6 有一位投资者一个月内做了15笔交易（同一品种买卖各一次算一笔），您认为这样的交易频率：</p>
+        <ul class="ansewrList">
+            <li data_id="6" data-proid="a" data_score="1"><b>A</b><span>太高了</span><input name="risk6" type="radio"
+                                                                                         class="risk-radio" value="1"/>
+            </li>
+            <li data_id="6" data-proid="b" data_score="5"><b>B</b><span>偏高</span><input name="risk6" type="radio"
+                                                                                        class="risk-radio" value="2"/>
+            </li>
+            <li data_id="6" data-proid="c" data_score="7"><b>C</b><span>正常</span><input name="risk6" type="radio"
+                                                                                        class="risk-radio" value="3"/>
+            </li>
+            <li data_id="6" data-proid="d" data_score="11"><b>D</b><span>偏低</span><input name="risk6" type="radio"
+                                                                                         class="risk-radio" value="4"/>
+            </li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="7">
+        <p>7 您的金融产品投资经验是多少年：</p>
+        <ul class="ansewrList">
+            <li data_id="7" data-proid="a" data_score="1"><b>A</b><span>不足1年</span><input name="risk7" type="radio"
+                                                                                          class="risk-radio" value="1"/>
+            </li>
+            <li data_id="7" data-proid="b" data_score="4"><b>B</b><span>1-3年</span><input name="risk7" type="radio"
+                                                                                          class="risk-radio" value="2"/>
+            </li>
+            <li data_id="7" data-proid="c" data_score="7"><b>C</b><span>3-5年</span><input name="risk7" type="radio"
+                                                                                          class="risk-radio" value="3"/>
+            </li>
+            <li data_id="7" data-proid="d" data_score="11"><b>D</b><span>5年以上</span><input name="risk7" type="radio"
+                                                                                           class="risk-radio"
+                                                                                           value="4"/></li>
+            <li data_id="7" data-proid="e" data_score="0"><b>E</b><span>从未投资过金融产品</span><input name="risk7" type="radio"
+                                                                                               class="risk-radio"
+                                                                                               value="5"/></li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="8">
+        <p>8 当您进行投资时，您的首要目标是：</p>
+        <ul class="ansewrList">
+            <li data_id="8" data-proid="a" data_score="0"><b>A</b><span>资产保值，我不愿意承担任何投资风险</span><input name="risk8"
+                                                                                                       type="radio"
+                                                                                                       class="risk-radio"
+                                                                                                       value="1"/></li>
+            <li data_id="8" data-proid="b" data_score="2"><b>B</b><span>尽可能保证本金安全，不在乎收益率比较低</span><input name="risk8"
+                                                                                                         type="radio"
+                                                                                                         class="risk-radio"
+                                                                                                         value="2"/>
+            </li>
+            <li data_id="8" data-proid="c" data_score="5"><b>C</b><span>产生较多的收益，可以承担一定的投资风险</span><input name="risk8"
+                                                                                                         type="radio"
+                                                                                                         class="risk-radio"
+                                                                                                         value="3"/>
+            </li>
+            <li data_id="8" data-proid="d" data_score="9"><b>D</b><span>实现资产大幅增长，愿意承担很大的投资风险</span><input name="risk8"
+                                                                                                          type="radio"
+                                                                                                          class="risk-radio"
+                                                                                                          value="4"/>
+            </li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="9">
+        <p>9 您认为自己能承受的最大投资损失是多少？</p>
+        <ul class="ansewrList">
+            <li data_id="9" data-proid="a" data_score="0"><b>A</b><span>10%以内</span><input name="risk9" type="radio"
+                                                                                           class="risk-radio"
+                                                                                           value="1"/></li>
+            <li data_id="9" data-proid="b" data_score="2"><b>B</b><span>10%-30%</span><input name="risk9" type="radio"
+                                                                                             class="risk-radio"
+                                                                                             value="2"/></li>
+            <li data_id="9" data-proid="c" data_score="5"><b>C</b><span>30%-50%</span><input name="risk9" type="radio"
+                                                                                             class="risk-radio"
+                                                                                             value="3"/></li>
+            <li data_id="9" data-proid="d" data_score="9"><b>D</b><span>超过50%</span><input name="risk9" type="radio"
+                                                                                           class="risk-radio"
+                                                                                           value="4"/></li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="10">
+        <p>10 您用于证券投资的资金不会用作其它用途的时间段为：</p>
+        <ul class="ansewrList">
+            <li data_id="10" data-proid="a" data_score="2"><b>A</b><span>短期——0到1年</span><input name="risk10"
+                                                                                               type="radio"
+                                                                                               class="risk-radio"
+                                                                                               value="1"/></li>
+            <li data_id="10" data-proid="b" data_score="4"><b>B</b><span>中期——1到5年</span><input name="risk10"
+                                                                                               type="radio"
+                                                                                               class="risk-radio"
+                                                                                               value="2"/></li>
+            <li data_id="10" data-proid="c" data_score="6"><b>C</b><span>长期——5年以上</span><input name="risk10"
+                                                                                               type="radio"
+                                                                                               class="risk-radio"
+                                                                                               value="3"/></li>
+        </ul>
+    </div>
+    <div class="subject hide" data-queid="1" data_id="11">
+        <p>11 您打算重点投资于哪一类投资品种？</p>
+        <ul class="ansewrList">
+            <li data_id="11" data-proid="a" data_score="0"><b>A</b><span>债券、货币市场基金、债券基金等固定收益类</span><input name="risk11"
+                                                                                                           type="radio"
+                                                                                                           class="risk-radio"
+                                                                                                           value="1"/>
+            </li>
+            <li data_id="11" data-proid="b" data_score="2"><b>B</b><span>股票、混合型基金、偏股型基金、股票型基金等权益类和固定收益类</span><input
+                    name="risk11" type="radio" class="risk-radio" value="2"/></li>
+            <li data_id="11" data-proid="c" data_score="5"><b>C</b><span>融资融券、约定购回、股票质押 回购等融资性产品和权益类、固定收益类</span><input
+                    name="risk11" type="radio" class="risk-radio" value="3"/></li>
+            <li data_id="11" data-proid="d" data_score="9">
+                <b>D</b><span>互联网非公开股权融资、期货、期权、信托、基金专项计划和融资性产品、权益类、固定收益类</span><input name="risk11" type="radio"
+                                                                                      class="risk-radio" value="4"/>
+            </li>
+        </ul>
+    </div>
+</form>
+<div class="foot  foot-risk">
+    <input id="btn-pre" type="button" class="nextBtn btn-risk blueBtn" href="javascript:;" value="上一题">
+    <input id="btn-next" type="button" disabled="" class="nextBtn btn-disabled btn-risk" href="javascript:;" value="提交">
+</div>
+<script src="scripts/jquery-1.8.3.min.js"></script>
+<script src="scripts/common-min.js"></script>
+<script type="text/javascript" src="scripts/overlay.js"></script>
+<script src="scripts/riskTest.js"></script>
+
+
+</body>
+</html>

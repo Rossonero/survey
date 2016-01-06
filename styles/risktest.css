@@ -1,0 +1,184 @@
+/* CSS Document */
+html {
+    height: 100%;
+}
+
+body, .indexBox {
+    background: #f0f0f0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.commonWp {
+    background: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin: 20px 10px;
+    padding: 20px 10px;
+    overflow: hidden;
+    border: 1px solid #d0d0d0;
+}
+
+.glWp {
+    margin: 20px 5px 15px 5px;
+}
+
+/*掌厅-风险测试过程*/
+.risk {
+    margin: 0 15px;
+    overflow-y: scroll;
+}
+
+.risk .subject {
+    font-size: 14px;
+    color: #333;
+}
+
+.ansewrList {
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+    background: #fff; /*padding-bottom:10px;*/
+    overflow: hidden;
+    width: 100%
+}
+
+.subject p {
+    color: #7d7d7d;
+    padding: 10px 0;
+}
+
+.ansewrList li {
+    padding: 7px 0;
+    line-height: 24px;
+    border-bottom: 1px solid #E0E0E0;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+.ansewrList li:last-child {
+    border-bottom: none;
+}
+
+.ansewrList b {
+    color: #777;
+    font-weight: normal;
+    display: block;
+    width: 33px;
+    height: 100%;
+    line-height: 300%;
+    text-align: center;
+    padding-left: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+.ansewrList span {
+    padding-left: 50px;
+    font-size: 12px;
+    display: block;
+    float: left;
+    width: 85%
+}
+
+.cur {
+    background: url(../images/red-right.png) no-repeat;
+    background-size: 33px 35px;
+    display: inline-block;
+    text-indent: -9999em;
+    background-position-y: 50%;
+    background-color: #c12b23;
+}
+
+/*alert css*/
+#alerts .title {
+    text-align: center;
+    font-size: 24px;
+    color: #303030;
+    padding: 25px 0 20px;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+#alerts .content {
+    width: 100%;
+    line-height: 22px;
+    font-size: 14px;
+    padding: 25px 10%;
+    border-top: 1px solid #e5e5e5;
+}
+
+#alerts .bottom {
+    padding: 0 10% 30px;
+}
+
+#alerts .bottom .ok {
+    display: inline-block;
+    width: 45%;
+    font-size: 15px;
+    height: 35px;
+    line-height: 35px;
+    background: #d64113;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 8%;
+}
+
+#alerts .bottom .no {
+    display: inline-block;
+    width: 45%;
+    font-size: 15px;
+    height: 35px;
+    background: #e6e6e6;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px;
+}
+
+.risk-tips {
+    padding: 10px 20px 10px 20px;
+    color: #666;
+    font-size: 14px;
+    background: #fff;
+    /*background: #fff url(../img/logo-min.png) center 10px no-repeat;*/
+    background-size: 120px 35px;
+    position: relative;
+}
+
+.risk-prog {
+    color: #363636;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.foot-risk {
+    margin: 0px;
+    padding: 5px 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f0f0f0;
+    z-index: 100;
+}
+
+.btn-risk {
+    width: 49%;
+    float: left;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+.btn-risk:first-child {
+    margin-right: 2% !important;
+}
+
+.risk-radio {
+    display: none;
+}
+
+/*alert css*/
